@@ -1,1 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>01 Founders Ascii Art Web Nov 2021</title>
+<link rel="stylesheet" href="CSS/asciiweb.css" type="html/css" />
+</head>
+<link rel="preload" as="image" href="logo.png">
+<body>
+    <div id="grad2" style="text-align:center;"></div><br>
+    <img src="templates/01founders.png" width="100" height="100" alt="Sponsored by 01Founders">
+<h1>Task Details</h1>
+<h3 id="user-content-objectives">Objectives</h3>
+<p>Ascii-art is a program which consists in receiving a string as an argument and outputting the string in a graphic representation using ASCII. Time to write big.
+   What we mean by a graphic representation using ASCII, is to write the string received using ASCII characters, as you can see in the example below:
 
+   <pre><code>
+    @@@@@@BB@@@@``^^``^^``@@BB$$@@BB$$
+    @@%%$$$$^^^^WW&amp;&amp;8888&amp;&amp;^^""BBBB@@@@
+    @@@@@@""WW8888&amp;&amp;WW888888WW``@@@@$$
+    BB$$``&amp;&amp;&amp;&amp;WWWW8888&amp;&amp;&amp;&amp;8888&amp;&amp;``@@@@
+    $$``&amp;&amp;WW88&amp;&amp;88&amp;&amp;&amp;&amp;8888&amp;&amp;88WW88``$$
+    @@""&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;88888888&amp;&amp;&amp;&amp;&amp;&amp;88&amp;&amp;``$$
+    ``````^^``^^^^^^````""^^``^^``^^``
+    ""WW^^@@@@^^``````^^BB@@^^``^^&amp;&amp;``
+    ^^&amp;&amp;^^@@````^^``&amp;&amp;``@@````^^^^&amp;&amp;``
+    ``WW&amp;&amp;^^""``^^WW&amp;&amp;&amp;&amp;""``^^^^&amp;&amp;88``
+    ^^8888&amp;&amp;&amp;&amp;&amp;&amp;WW88&amp;&amp;88WW&amp;&amp;&amp;&amp;88&amp;&amp;WW``
+    @@``&amp;&amp;88888888WW&amp;&amp;WW88&amp;&amp;88WW88^^$$
+    @@""88&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;888888&amp;&amp;``^^&amp;&amp;88``$$
+    @@@@^^&amp;&amp;&amp;&amp;&amp;&amp;""``^^^^^^8888&amp;&amp;^^@@@@
+    @@@@@@^^888888&amp;&amp;88&amp;&amp;&amp;&amp;MM88^^BB$$$$
+    @@@@@@BB````&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;88""``BB@@BB$$
+    $$@@$$$$$$$$``````````@@$$@@$$$$$$
+    </code></pre>
+
+This project should handle an input with numbers, letters, spaces, special characters and \n.
+Take a look at the ASCII manual.
+
+<ul>
+<li>This project should handle an input with numbers, letters, spaces, special characters and <code>\n</code>.</li>
+<li>Take a look at the ASCII manual.</li>
+</ul>
+
+<h3 id="user-content-instructions">Instructions</h3>
+<ul>
+<li>
+<p>Your project must be written in <strong>Go</strong>.</p>
+</li>
+<li>
+<p>The code must respect the <a href="https://git.learn.01founders.co/root/public/src/branch/master/subjects/good-practices/README.md" rel="nofollow" target="_blank"><strong>good practices</strong></a>.</p>
+</li>
+<li>
+<p>It is recommended that the code present a <strong>test file</strong>.</p>
+</li>
+<li>
+<p>Some <strong>banner</strong> files with a specific graphical template representation using ASCII will be given. The files are formatted in a way that is not necessary to change them.</p>
+<ul>
+<li><a href="https://git.learn.01founders.co/root/public/src/branch/master/subjects/ascii-art/shadow.txt" rel="nofollow" target="_blank">shadow</a></li>
+<li><a href="https://git.learn.01founders.co/root/public/src/branch/master/subjects/ascii-art/standard.txt" rel="nofollow" target="_blank">standard</a></li>
+<li><a href="https://git.learn.01founders.co/root/public/src/branch/master/subjects/ascii-art/thinkertoy.txt" rel="nofollow" target="_blank">thinkertoy<div></div><div></div><div></div><div></div></a></li>
+</ul>
+</li>
+</ul>
+<h3 id="user-content-banner-format">Banner Format</h3>
+<ul>
+<li>Each character has a height of 8 lines.</li>
+<li>Characters are separated by a new line <code>\n</code>.</li>
+<li>Here is an example of ' ', '!' and '"'(one dot represents one space) :</li>
+</ul>
+<pre><code class="chroma language-console">
+    ......
+    ......
+    ......
+    ......
+    ......
+    ......
+    ......
+    ......
+    
+    ._..
+    |.|.
+    |.|.
+    |.|.
+    |_|.
+    (_).
+    ....
+    ....
+    
+    ._._..
+    (.|.).
+    .V.V..
+    ......
+    ......
+    ......
+    ......
+    ......
+    
+    </code></pre>
+    <h3 id="user-content-usage">Usage</h3>
+    <pre><code class="chroma language-console">
+   
+    student$ go run . "Hello\n" | cat -e
+     _    _          _   _          $
+    | |  | |        | | | |         $
+    | |__| |   ___  | | | |   ___   $
+    |  __  |  / _ \ | | | |  / _ \  $
+    | |  | | |  __/ | | | | | (_) | $
+    |_|  |_|  \___| |_| |_|  \___/  $
+                                    $
+                                    $
+    $
+    student$ go run . "hello" | cat -e
+        _              _   _          $
+    | |            | | | |         $
+    | |__     ___  | | | |   ___   $
+    |  _ \   / _ \ | | | |  / _ \  $
+    | | | | |  __/ | | | | | (_) | $
+    |_| |_|  \___| |_| |_|  \___/  $
+                                    $
+                                    $
+    student$ go run . "HeLlO" | cat -e
+        _    _          _        _    ____   $
+    | |  | |        | |      | |  / __ \  $
+    | |__| |   ___  | |      | | | |  | | $
+    |  __  |  / _ \ | |      | | | |  | | $
+    | |  | | |  __/ | |____  | | | |__| | $
+    |_|  |_|  \___| |______| |_|  \____/  $
+                                            $
+                                            $
+    student$ go run . "Hello There" | cat -e
+        _    _           _    _                 _______   _                              $
+    | |  | |         | |  | |               |__   __| | |                             $
+    | |__| |   ___   | |  | |    ___           | |    | |__      ___    _ __     ___  $
+    |  __  |  / _ \  | |  | |   / _ \          | |    |  _ \    / _ \  | '__|   / _ \ $
+    | |  | | |  __/  | |  | |  | (_) |         | |    | | | |  |  __/  | |     |  __/ $
+    |_|  |_|  \___|  |_|  |_|   \___/          |_|    |_| |_|   \___|  |_|      \___| $
+                                                                                        $
+                                                                                        $
+    student$ go run . "1Hello 2There" | cat -e
+            _    _           _    _                       _______   _                              $
+        _  | |  | |         | |  | |               ____  |__   __| | |                             $
+    / | | |__| |   ___   | |  | |    ___       |___ \    | |    | |__      ___    _ __     ___  $
+    | | |  __  |  / _ \  | |  | |   / _ \        __) |   | |    |  _ \    / _ \  | '__|   / _ \ $
+    | | | |  | | |  __/  | |  | |  | (_) |      / __/    | |    | | | |  |  __/  | |     |  __/ $
+    |_| |_|  |_|  \___|  |_|  |_|   \___/      |_____|   |_|    |_| |_|   \___|  |_|      \___| $
+                                                                                                $
+                                                                                                $
+    student$ go run . "{Hello There}" | cat -e
+        __   _    _           _    _                 _______   _                              __    $
+        / /  | |  | |         | |  | |               |__   __| | |                             \ \   $
+        | |   | |__| |   ___   | |  | |    ___           | |    | |__      ___    _ __     ___   | |  $
+    / /    |  __  |  / _ \  | |  | |   / _ \          | |    |  _ \    / _ \  | '__|   / _ \   \ \ $
+    \ \    | |  | | |  __/  | |  | |  | (_) |         | |    | | | |  |  __/  | |     |  __/   / / $
+        | |   |_|  |_|  \___|  |_|  |_|   \___/          |_|    |_| |_|   \___|  |_|      \___|  | |  $
+        \_\                                                                                    /_/   $
+                                                                                                    $
+    student$ go run . "Hello\nThere" | cat -e
+        _    _           _    _           $
+    | |  | |         | |  | |          $
+    | |__| |   ___   | |  | |    ___   $
+    |  __  |  / _ \  | |  | |   / _ \  $
+    | |  | | |  __/  | |  | |  | (_) | $
+    |_|  |_|  \___|  |_|  |_|   \___/  $
+                                        $
+                                        $
+        _______   _                              $
+    |__   __| | |                             $
+        | |    | |__      ___    _ __     ___  $
+        | |    |  _ \    / _ \  | '__|   / _ \ $
+        | |    | | | |  |  __/  | |     |  __/ $
+        |_|    |_| |_|   \___|  |_|      \___| $
+                                                $
+                                                $
+
+</code></pre>
+
+
+
+
+
+</p>
+
+</body>
+</html> 
