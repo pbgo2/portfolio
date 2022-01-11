@@ -1,2 +1,2 @@
 # portfolio
-ALL projects runnable in Ubuntu only
+ALL projects runnable in Ubuntu ONLY
