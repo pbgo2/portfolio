@@ -9,4 +9,4 @@
 4) If you squize too much and terminal window became too small to be able print ascii-art without glich it will print message 
 	"Not enough space for ascii-art". 
 
-5) ./main "hello" standard --align=right  --in ubuntu to run binary file (eg. string to dislay "hello")
+5) ./main "hello" standard --align=right  	--in ubuntu to run binary file (eg. string to dislay "hello")
