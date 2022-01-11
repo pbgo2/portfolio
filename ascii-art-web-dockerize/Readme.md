@@ -20,8 +20,8 @@ after finish purge docker's items:
 Description
 		Ascii-art-web consists in creating and running a server, in which it will be possible to use a web GUI (graphical user
 		interface) version of project, ascii-art.
-Authors in alphabetical order
-		JayP,PeterB(C),PPJD
+
+
 Implementation details: algorithm
 		Usage of server is realised by two main functions:
 		(1)process(w http.ResponseWriter, r *http.Request) and
