@@ -10,4 +10,4 @@ The output should manipulate colors using the flag --color=<color>, in which --c
 
  Usage: go run . [string] [OPTION]
 
- EX: go run. something --color=<color>
+ EX: go run. something --color=blue
