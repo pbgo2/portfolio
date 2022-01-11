@@ -1,13 +1,13 @@
 Description
 		Ascii-art-web consists in creating and running a server, in which it will be possible to use a web GUI (graphical user
 		interface) version of project, ascii-art.
-Authors in alphabetical order
-		JayP,PeterB(C),PPJD
+
 Usage: how to run
 		In terminal window go to project directory:
 			go run main.go
 		Launch webrowser (eg FireFox), type in address bar:
 			http://localhost:8080/
+
 Implementation details: algorithm
 		Usage of server is realised by two main functions:
 		(1)process(w http.ResponseWriter, r *http.Request) and
