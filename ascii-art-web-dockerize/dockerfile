@@ -1,0 +1,17 @@
+FROM node:8.11-slim
+
+LABEL author="Peter,PPJD,JayP"
+LABEL about="Ascii-art-web-server"
+LABEL version="1.0"
+LABEL description="Create Ascii-ART base on ascii table characters submitted"
+
+
+WORKDIR ~/ascii-art-web-dockerize
+ENV workdirectory ~/ascii-art-web-dockerize
+
+COPY main .
+COPY standard.txt .
+COPY shadow.txt .
+COPY thinkertoy.txt .
+RUN mkdir templates
+COPY postform.html templates/

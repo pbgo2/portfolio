@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    div {
+      background-color: lightgrey;
+      width: 1000px;
+      border: 15px solid green;
+      padding: 50px;
+      margin: 20px;
+    }
+    </style>
+<body>
+<h2 style="color:#ff0000;">Text to Convert:</h2>
+<form action="/ascii-art" method="POST">
+<label for="TexttoConvert" TexttoConvert:></label><br>
+<input type = "text" id= "TexttoConvert" name= "Text_to_Convert" value = ""> 
+<label for="TexttoConvert" TexttoConvert1:></label><br>
+<input type = "text" id= "TexttoConvert" name= "Text_to_Convert1" value = ""> 
+<br>
+<br>
+<br>
+<label for="banner-select">Choose a banner:</label>
+<select name="choice">
+    <option value="shadow.txt">shadow</option>
+    <option value="standard.txt" selected>standard</option>
+    <option value="thinkertoy.txt">thinkertoy</option>
+  </select>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+<br>
+<br>
+<input type = "submit" value = "Convert to Ascii Art">
+<input type="reset" value="Reset" 
+                style="background-color: red; 
+                        color: white" />
+</form>
+<br>
+<br>
+<h2 style="color:#ff0000;">Ascii-Art Output:</h2>
+<div>
+<p>
+<pre> 
+<h10 style="color:#080b0f;font-weight: bold;">{{.TexttoConvert}}</h10>
+<h10 style="color:#080b0f;font-weight: bold;">{{.TexttoConvert1}}</h10>
+</pre>
+</p>
+</div>
+</body>
+</html>
