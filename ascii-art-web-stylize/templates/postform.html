@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title id="title">01 Founders Ascii Art Web Task Nov 2021</title>
+  <link rel="stylesheet" href="CSS/asciiweb.css"> 
+  
+ 
+</head>
+<body>
+  <h1>01 Founders Ascii Art Web Task Nov 2021</h1>
+  <!-- <link rel="shortcut icon" href="https://www.01founders.co/hubfs/fav.png"> -->
+  <div id="grad2"></div><br>
+  <h2>Text to Convert:</h2>
+<form action="/ascii-art" method="POST">
+<label for="TexttoConvert" TexttoConvert:></label>
+<input type = "text" id= "TexttoConvert" name= "Text_to_Convert" value = ""> 
+<label for="TexttoConvert" TexttoConvert1:></label><br>
+<input type = "text" id= "TexttoConvert" name= "Text_to_Convert1" value = ""> 
+<br>
+<br>
+<br>
+<label for="banner-select">Choose a banner:</label>
+<select name="choice">
+    <option value="shadow.txt">shadow</option>
+    <option value="standard.txt" selected>standard</option>
+    <option value="thinkertoy.txt">thinkertoy</option>
+  </select>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+<br>
+<div id="divh">
+<input type = "submit" value = "Convert to Ascii Art">
+</div>
+<br>
+<input type="reset" value="Reset" 
+  style="background-color: black;color: white" />
+</form>
+<br>
+<h2 div id="tensnodelay">Ascii-Art Output:</h2>
+</body>
+<pre><div class="mydiv">
+{{.TexttoConvert}}
+{{.TexttoConvert1}}
+</div></pre>
+</html>
