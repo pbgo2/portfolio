@@ -1,7 +1,7 @@
 # groupie-tracker
 To run on local host:
 
-go run .
+go run main.go (or just run binary file ./main)
 
 
 Webbrowser address bar--> localhost:8080/
