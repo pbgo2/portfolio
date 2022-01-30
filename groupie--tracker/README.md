@@ -1,4 +1,4 @@
-# groupie-tracker
+# groupie--tracker
 To run on local host:
 
 go run main.go (or just run binary file ./main)
