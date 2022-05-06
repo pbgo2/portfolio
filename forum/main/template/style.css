@@ -1,0 +1,76 @@
+body {
+  background-color: rgb(235, 38, 38);
+
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+hr {
+  size: 10px;
+  border: 3px;
+}
+
+a,
+p {
+  color: floralwhite;
+  font-size: medium;
+
+}
+
+.form-control {
+  color: black;
+  background-color: rgb(196, 221, 221);
+}
+
+
+.login-column {
+  margin: auto;
+  padding: 3% 2%;
+}
+
+.colorcode {
+  background-color: rgb(235, 38, 38);
+}
+
+.form-group {
+  background-color: rgb(235, 38, 38);
+  color: white;
+}
+
+.logbutton {
+  background-color: black;
+  color: white;
+}
+
+.post-header {
+  text-align: center;
+  height: 100%;
+  margin: 16px 0;
+}
+
+.bot-line {
+  height: 2em;
+
+}
+
+.bot-line p {
+  margin-left: 1em;
+}
+
+
+
+.btn {
+  background-color: rgb(235, 38, 38);
+  border: 2px;
+  outline-color: whitesmoke;
+  border-radius: 4pt;
+  color: white;
+  /* padding: 15px 32px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.li.nav-item:hover {
+  color: rgb(76, 215, 169)
+}
