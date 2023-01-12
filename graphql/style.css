@@ -1,0 +1,87 @@
+body, html {
+  background-color: #808080;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  height: 90px;
+  justify-content: space-between;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  text-align: center;
+}
+.header-user {
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: auto;
+}
+.header-user-ul {
+  list-style-type: none;
+  margin: auto;
+  font-weight: lighter;
+  text-align: left;
+}
+.header-journey {
+  font-weight: bold;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.subject-select{
+  background-color: rebeccapurple
+}
+.header-time {
+  box-sizing: content-box;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+img {
+  max-width: 75%;
+  max-height: 75%;
+  object-fit: scale-down;
+}
+
+.results {
+  display: flex;
+  justify-content: space-around;
+}
+
+.xp-level {
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: auto;
+}
+.xp-level-ul {
+  list-style-type: none;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-weight: lighter;
+  padding-left: 0;
+}
+
+figcaption {
+  font-weight: bold;
+  text-align: center;
+}
+
+.results-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-around;
+  text-align: center;
+}
+
+
+#myChartline {
+  background : darkgray;
+  width: 700px;
+  height: 300px;
+  padding: 20px 20px 20px 20px;
+}
+
+#myChartbar {
+  background : darkgray;
+  width: 700px;
+  height: 300px;
+  padding: 20px 20px 20px 20px;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script2.js" defer></script>
+</head>
+<body>
+   <header>
+      <div class="header-journey">Coding Journey:
+        <br>
+          <select id="menu"class="subject-select">
+            <option selected hidden>Div-01</option>
+            <option id="0">Piscine-GO</option>
+            <option id="1">WeekFour</option>
+            <option id="2">Piscine-JS</option>
+            <option id="3">Div-01</option>
+          </select>
+      </div>
+      <div class="header-user">Basic user identification:
+          <ul class="header-user-ul">
+            <li id="userLogin"></li>
+            <li id="campus"></li>
+            <li id="grade"></li>
+          </ul>
+      </div>
+      <div class="xp-level"> Results achieved:
+        <ul class="xp-level-ul">
+          <li id="xp"></li>
+          <li id="level"></li>
+        </ul>
+      </div>
+      <div class="header-time">
+        <img src="graphql.png" alt="graphql">
+      </div>
+    </header>
+
+   <div class="results">
+      <figure>
+        <figcaption>Div-01, XP[kB] earned by project</figcaption>
+        <br>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          class="pie-chart"
+          id="myChart"
+          width="420" 
+          height="300"
+          viewBox="0 0 420 300">
+          <circle r="140" stroke="none" fill="none" />
+        </svg>
+        <div id="pie-legend">
+          <p>Project name:</p>
+        </div>
+      </figure>
+
+      <div class="results-1" id="results-1">
+        <div>
+          <figure>
+            <figcaption>
+              <p>XP[kB] earned in a time period</p> 
+              <p>(hoover point for details)</p>
+            </figcaption>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              class="line-chart"
+              id="myChartline"
+              width="500" 
+              height="300" 
+              viewBox="0 0 500 300">
+            </svg>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <figcaption>
+              <p>Levels over time</p>
+              <p>(hoover bar for details)</p>
+            </figcaption>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              class="bar-chart"
+              id="myChartbar"
+              width="500" 
+              height="300" 
+              viewBox="0 0 500 300">
+            </svg>
+          </figure>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
